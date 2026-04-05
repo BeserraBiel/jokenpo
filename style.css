@@ -1,51 +1,66 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a2e;
+    background-color: #121212;
     color: white;
+    font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 100vh;
     margin: 0;
 }
 
-.container {
-    text-align: center;
-    background-color: #16213e;
-    padding: 2rem;
+.arena {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: #1e1e1e;
+    padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 150px;
+    border: 3px solid #333;
+    transition: 0.3s;
 }
 
-h1 { margin-bottom: 2rem; }
+.escolha-imagem {
+    font-size: 80px;
+    margin-top: 20px;
+}
 
-.btn {
+.vs-container {
+    text-align: center;
+}
+
+#resultado-texto {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+    min-width: 200px;
+    border-bottom: 4px solid #e94560;
+}
+
+.controles button {
     padding: 15px 25px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
     margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
     border: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-}
-
-.btn:hover { transform: translateY(-5px); filter: brightness(1.2); }
-
-.pedra { background-color: #533483; color: white; }
-.papel { background-color: #e94560; color: white; }
-.tesoura { background-color: #0f3460; color: white; }
-
-.placar {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #0f3460;
     border-radius: 10px;
+    background: #e94560;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
 }
 
-#resultado {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4ecca3;
-    margin-top: 10px;
+.controles button:hover {
+    background: #ff5e78;
+    transform: scale(1.1);
 }
+
+.ganhou { border-color: #4ecca3 !important; box-shadow: 0 0 20px #4ecca3; }
+.perdeu { border-color: #e94560 !important; }
