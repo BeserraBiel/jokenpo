@@ -62,5 +62,7 @@ body {
     transform: scale(1.1);
 }
 
-.ganhou { border-color: #4ecca3 !important; box-shadow: 0 0 20px #4ecca3; }
-.perdeu { border-color: #e94560 !important; }
+/* Cores dinâmicas para o vencedor */
+.ganhou { border-color: #4ecca3 !important; box-shadow: 0 0 40px #4ecca3; }
+.perdeu { border-color: #e94560 !important; box-shadow: 0 0 20px #e94560; }
+.empate { border-color: #ffffff !important; box-shadow: 0 0 20px #ffffff; }
