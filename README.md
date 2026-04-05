@@ -32,7 +32,8 @@ O computador gera um número aleatório entre 1 e 3 através da função `Math.r
 
 ## 🎨 Preview
 
-<img width="1000" height="562" alt="image" src="https://github.com/user-attachments/assets/3f335994-0ec0-4f68-8203-039da3a36032" />
+<img width="1000" height="562" alt="image" src="<img width="900" height="528" alt="image" src="https://github.com/user-attachments/assets/3b5c01e5-ea78-43ae-85b1-85ff5d3c6153" />
+" />
 
 
 ---
