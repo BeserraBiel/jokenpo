@@ -1,25 +1,29 @@
-function jogar(escolhaJogador) {
-
-    const escolhaComputador = Math.floor(Math.random() * 3) + 1;
-
-    const nomes = { 1: "Pedra", 2: "Papel", 3: "Tesoura" };
+function jogar(p) {
+    const c = Math.floor(Math.random() * 3) + 1;
+    const icones = { 1: "🪨", 2: "📄", 3: "✂️" };
     
-    const p = escolhaJogador;
-    const c = escolhaComputador;
-    let resultadoFinal = "";
+    document.getElementById('player-card').className = 'card';
+    document.getElementById('computer-card').className = 'card';
 
-    
+    document.getElementById('player-img').innerText = icones[p];
+    document.getElementById('computer-img').innerText = icones[c];
+
+    const resTexto = document.getElementById('resultado-texto');
+
     if (p === c) {
-        resultadoFinal = "Empate! 🤝";
+        resTexto.innerText = "EMPATE!";
+        resTexto.style.color = "white";
     } 
     else if ((p === 1 && c === 3) || (p === 2 && c === 1) || (p === 3 && c === 2)) {
-        resultadoFinal = "Você Venceu! 🎉";
+        resTexto.innerText = "VOCÊ VENCEU!";
+        resTexto.style.color = "#4ecca3";
+        document.getElementById('player-card').classList.add('ganhou');
+        document.getElementById('computer-card').classList.add('perdeu');
     } 
     else {
-        resultadoFinal = "Você Perdeu! 😢";
+        resTexto.innerText = "PC VENCEU!";
+        resTexto.style.color = "#e94560";
+        document.getElementById('computer-card').classList.add('ganhou');
+        document.getElementById('player-card').classList.add('perdeu');
     }
-
-    
-    const msg = `Você escolheu <strong>${nomes[p]}</strong> e o computador escolheu <strong>${nomes[c]}</strong>.<br>${resultadoFinal}`;
-    document.getElementById('resultado').innerHTML = msg;
 }
