@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jokenpô Moderno</title>
+    <title>Jokenpô - Arena</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Jokenpô</h1>
-        
-        <div class="botoes">
-            <button class="btn pedra" onclick="jogar(1)">Pedra</button>
-            <button class="btn papel" onclick="jogar(2)">Papel</button>
-            <button class="btn tesoura" onclick="jogar(3)">Tesoura</button>
+    <div class="arena">
+        <div class="card" id="player-card">
+            <h2>Jogador</h2>
+            <div class="escolha-imagem" id="player-img">?</div>
         </div>
 
-        <div class="placar">
-            <p id="status">Escolha uma opção para começar!</p>
-            <p id="resultado"></p>
+        <div class="vs-container">
+            <div id="resultado-texto">VS</div>
         </div>
+
+        <div class="card" id="computer-card">
+            <h2>Computador</h2>
+            <div class="escolha-imagem" id="computer-img">?</div>
+        </div>
+    </div>
+
+    <div class="controles">
+        <button onclick="jogar(1)">🪨 Pedra</button>
+        <button onclick="jogar(2)">📄 Papel</button>
+        <button onclick="jogar(3)">✂️ Tesoura</button>
     </div>
 
     <script src="jokenpo.js"></script>
