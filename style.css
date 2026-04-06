@@ -10,6 +10,44 @@ body {
     margin: 0;
 }
 
+.placar-geral {
+    display: flex;
+    align-items: center;
+    background: #16213e;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    border: 2px solid #822de4;
+    box-shadow: 0 0 20px rgb(132, 71, 245);
+}
+
+.ponto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.label {
+    font-size: 0.7rem;
+    color: #888;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#score-player, #score-computer {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace; /* Fonte estilo digital */
+    color: #1cf11c;
+}
+
+.separador {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: -15px;
+}
+
 .arena {
     display: flex;
     align-items: center;
