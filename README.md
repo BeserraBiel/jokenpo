@@ -17,7 +17,7 @@ Este projeto foi construído utilizando:
 Para visualizar o jogo na sua máquina, siga os passos abaixo:
 
 1.  Faça o download ou clone este repositório.
-2.  Certifique-se de que os arquivos `index.html`, `style.css` e `script.js` estejam na mesma pasta.
+2.  Certifique-se de que os arquivos `index.html`, `style.css` e `jokenpo.js` estejam na mesma pasta.
 3.  Abra o arquivo `index.html` no seu navegador.
     * **Dica:** Se estiver usando o VS Code, utilize a extensão **Live Server** para rodar o projeto em um `localhost` e ver as alterações em tempo real.
 
