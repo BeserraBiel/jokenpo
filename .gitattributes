@@ -1,0 +1,6 @@
+# Esconde o CSS das estatísticas (ele vira "vendored")
+*.css linguist-vendored
+
+# Força o HTML e o JS a serem detectados sempre
+*.html linguist-detectable=true
+*.js linguist-detectable=true
